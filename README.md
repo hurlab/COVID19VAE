@@ -22,7 +22,7 @@
 ## Repository Contents
 - **`1-1_convert_to_excel.py`** – Converts raw VAERS text output files into organized Excel spreadsheets, with one sheet per vaccine for easy downstream analysis.  
 - **`4-1_vaxafe_massdownload_male_vs_female_age_v1.py`** – Automates bulk data downloads from the VaxAFE portal by vaccine, sex, and age range, and saves the results in structured Excel files for further statistical analysis.  
-- **R Scripts** – Provide statistical analyses and visualizations. These can be loaded into **RStudio** and executed directly for reproducibility.
+- **R Scripts** – Provide statistical analyses and visualizations. 
 
 ---
 
