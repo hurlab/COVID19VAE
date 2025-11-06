@@ -1,3 +1,12 @@
+################################################################################
+# This script converts the HTML-like text output from VaxAfe mass downloads
+# into structured Excel workbooks. For each .txt file under ./vaxafe_output/
+# it parses the vaccine-specific sections, extracts the AE tables, and writes
+# an Excel file (./excel_output/<name>.xlsx) with one sheet per vaccine.
+# Sheet names are cleaned to remove redundant prefixes/suffixes and trimmed to
+# meet Excel's 31-character limit.
+################################################################################
+
 import os
 import pandas as pd
 import re

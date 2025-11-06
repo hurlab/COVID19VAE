@@ -1,3 +1,11 @@
+################################################################################
+# This script automates VaxAfe queries across vaccine, age-range, and sex
+# combinations to compare male vs female adverse event counts. For each query it
+# posts to violinet.org, saves the raw HTML response for debugging, parses the
+# adverse event table, and exports results to Excel files under
+# ./vaxafe_male-vs-female_age/downloaded/.
+################################################################################
+
 import requests
 from bs4 import BeautifulSoup
 import os
