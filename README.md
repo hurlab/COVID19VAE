@@ -60,14 +60,6 @@ These scripts perform data processing, statistical analyses, and generate visual
 
 ## R Scripts
 
-### Environment (after cloning)
-To reproduce the exact package set used in this project:
-
-    install.packages("renv")
-    renv::restore()   # installs CRAN + Bioconductor versions recorded in renv.lock
-
-(Each script also uses `pacman::p_load()` to auto-install missing packages, but `renv` ensures consistent versions across machines.)
-
 ### Scripts and purpose
 - **`2-1_gather_all_AE_terms.R`** — Scans all Excel workbooks/sheets to collect unique adverse event (AE) terms, flags admin/pattern-matched terms, and writes `Unique_AE_Terms_List.xlsx`.
 - **`2-2_trim_AE-terms.R`** — Loads curated AE lists, reports conflicts, and removes flagged terms from every workbook/sheet. Saves trimmed workbooks to `trimmed_excel_output/` and an Excel summary report.
